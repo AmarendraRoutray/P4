@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: cursive, sans-serif;
+            background: rgb(60, 56, 56);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1{
+            /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+            font-family: small-caps slashed-zero;
+            color: whitesmoke;
+            text-align: center;
+            text-shadow: 0px 0px 9px cyan;
+        }
+        fieldset
+        {
+            color: white;
+            background-color: rgba(45, 119, 149, 0.750);
+            border-radius: 15px 15px 15px 15px;
+            padding: 20px;
+            margin: auto 30px;
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0px 0px 10px whitesmoke;
+            
+        }
+        fieldset>legend
+        {
+            color: rgb(10, 7, 7);
+            font-family: "Old English Text MT",sans-serif;
+            font-size: 25px;
+            text-shadow: 0px 0px 8px rgb(243, 242, 242);
+            background: linear-gradient(#02858e, #ffffff);
+            backdrop-filter: blur(100px);
+            border: 2px solid whitesmoke;
+            border-radius: 20px 20px 0px 0px;
+            padding: 8px 18px;
+            
+        }
+        table
+        {
+            width: 100%;
+        }
+        table td
+        {
+            font-size: 20px;
+            padding: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="month"],
+        select
+        {
+            
+            font-size: 18px;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(253, 251, 251, 0.908);
+        }
+        textarea
+        {
+            border: none;
+            outline: none;
+            width: 220px;
+            border-radius: 5px;
+            background-color: rgba(253, 251, 251, 0.908);
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus,
+        input[type="month"]:focus,
+        select:focus,
+        textarea:focus
+        {
+            box-shadow: 0px 0px 5px rgb(250, 250, 250);
+            background-color: #bbdfff;
+        }
+        table th
+        {
+            text-align: justify;
+            font-size: 18px;
+        }
+        input[type="date"]:hover,
+        input[type="month"]:hover,
+        input[type="time"]:hover,
+        input[type="checkbox"],
+        select:hover
+        {
+            cursor: pointer;
+        }
+        input[type="time"]
+        {
+            background-color: rgba(253, 251, 251, 0.908);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .button
+        {
+            font-family: "Old English Text MT",sans-serif;
+            background: linear-gradient(#ffffff,#02858e);
+            font-size: 20px;
+            padding: 8px 18px;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.586);
+        }
+        .button:hover
+        {
+            cursor: pointer;
+            box-shadow: 0px 0px 10px whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>ONLINE JOB APPLICATION FORM</h1>
+    <form>
+        <fieldset>
+           <legend>Personal Details</legend>
+           <table>
+                <tbody>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text"></td>
+                        <td>Middle Name</td>
+                        <td><input type="text"></td>
+                        <td>Last Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name</td>
+                        <td><input type="text"></td>
+                        <td>Mother's Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Current Address</td>
+                        <td><textarea rows="3" cols="20"></textarea></td>
+                        <td>Permanent Address</td>
+                        <td><textarea rows="3" cols="20"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Contact :</td>
+                    </tr>
+                    <tr>
+                        <td>Landline Number</td>
+                        <td><input type="text"></td>
+                        <td>Mobile Number</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth</td>
+                        <td><input type="date"></td>
+                        <td>Place of Birth</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Select Gender</td>
+                        <td><input type="radio" value="Male" name="gender">Male</td>
+                        <td><input type="radio" value="Female" name="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Highest Qualification</td>
+                        <td><input type="text"></td>
+                        <td>Year of Passing</td>
+                        <td><input type="month"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Languages Known</td>
+                        <td><input type="checkbox" value="hindi">Hindi</td>
+                        <td><input type="checkbox" value="english">English</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Select Your Hobbies</td>
+                        <td><input type="checkbox" value="eating">Eating</td>
+                        <td><input type="checkbox" value="sleeping">Sleeping</td>
+                        <td><input type="checkbox" value="coding">Coding</td>
+                    </tr>
+                    <tr>
+                        <td>About Yourself</td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>
+                            <select>
+                                <option value="">Indian</option>
+                                <option value="">Russian</option>
+                                <option value="">African</option>
+                                <option value="">Korean</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aadhar Number</td>
+                        <td><input type="number"></td>
+                        <td>PAN Number</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+           </table>
+        </fieldset>
+        <fieldset>
+            <legend>Education Details</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>SNo.</th>
+                        <th>Qualification</th>
+                        <th>Institute/University</th>
+                        <th>Year of Passing</th>
+                        <th>Mark (%)</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="month"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="month"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="month"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>SNo.</th>
+                        <th>Company</th>
+                        <th>Work / Roles</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><textarea cols="20" rows="3"></textarea></td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Other Details</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Job type</td>
+                        <td><input type="checkbox" value="permanent">Permanent</td>
+                        <td><input type="checkbox" value="contract">Contract</td>
+                        <td><input type="checkbox" value="Other">Other</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Joining</td>
+                        <td><input type="date"></td>
+                        <td>Time of Joining</td>
+                        <td><input type="time"></td>
+                    </tr>
+                    <tr>
+                        <td>Preferred Job Location</td>
+                        <td><input type="checkbox" value="hyderabad">Hyderabad</td>
+                        <td><input type="checkbox" value="bangalore">Bangalore</td>
+                        <td><input type="checkbox" value="other">Other</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Willing to Relocate to Hyderabad?</td>
+                        <td><input type="checkbox" name="relocate" value="yes">Yes</td>
+                        <td><input type="checkbox" name="relocate" value="no">No</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="checkbox">
+                            <span>I am here declaring that all the above mentioned information is true as per my knowledge.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" class="button"></td>
+                        <td><input type="reset" value="Reset" class="button"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
